@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Outfit";
+  color: #5f564d;
+  margin: 0;
+}
+
+body {
+  background-color: #f3e5d7;
+}
+
+h1 {
+  font-family: "Young Serif";
+  font-weight: lighter;
+  color: #312e2c;
+  padding: 40px 0 24px 0;
+}
+
+p {
+  font-size: 1em;
+  padding-bottom: 32px;
+}
+
+h3 {
+  color: #7a284e;
+  padding-bottom: 16px;
+}
+
+h2 {
+  font-family: "Young Serif";
+  font-weight: lighter;
+  color: #854632;
+  padding-bottom: 24px;
+}
+
+ul li::marker {
+  color: #854632;
+}
+ol li::marker {
+  color: #854632;
+  font-weight: bold;
+}
+
+.preparation ul li:nth-child(2) {
+  padding: 8px 0;
+}
+
+.recipe-card {
+  margin: 0 auto;
+  width: 736px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.content {
+  padding: 40px;
+}
+
+.content .img-1 {
+  width: 100%;
+  height: 300px;
+  background-image: url("assets/images/image-omelette.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.preparation {
+  padding: 28px;
+  background-color: #fff7fb;
+  border-radius: 12px;
+}
+
+.ingredients {
+  padding: 32px 0;
+}
+.ingredients ul {
+  padding: 0 0 0 25px;
+}
+
+.ingredients ul li {
+  padding: 4px 0 4px 16px;
+}
+.ingredients ul li:first-child {
+  padding: 0 0 4px 16px;
+}
+.ingredients ul li:last-child {
+  padding: 4px 0 0 16px;
+}
+
+.hr-line {
+  border: solid 1px #e3ddd7;
+}
+
+.instructions {
+  padding: 32px 0;
+}
+
+.instructions ol {
+  padding: 0 0 0 25px;
+}
+
+.instructions ol li {
+  padding: 4px 0 4px 16px;
+}
+.instructions ol li:first-child {
+  padding-bottom: 4px;
+}
+.instructions ol li:last-child {
+  padding-top: 4px;
+}
+
+/* Style the nutrition section */
+.nutrition {
+  padding: 32px 0;
+}
+.nutrition p {
+  padding-bottom: 24px;
+}
+
+/* Style the table */
+.nutrition table {
+  width: 100%; /* Make the table fill the width of the section */
+  border-collapse: collapse; /* Remove borders between table cells */
+}
+
+/* Style the table cells */
+.nutrition table td {
+  padding: 10px; /* Add padding to table cells */
+  border-bottom: 1px solid #e3ddd7; /* Add a light border to each cell */
+}
+
+.nutrition table tbody tr:last-child td {
+  border-bottom: none; /* Remove the bottom border for the last row cells */
+}
+.nutrition table tbody tr td:last-child {
+  color: #854632;
+  font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+  .recipe-card {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content .img-1 {
+    width: 100%;
+    height: 171px;
+    border-radius: 0;
+  }
+
+  .preparation,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    padding: 16px;
+  }
+
+  .ingredients ul li {
+    padding: 4px 0;
+  }
+  .ingredients ul li:first-child {
+    padding: 0 0 4px 0;
+  }
+  .ingredients ul li:last-child {
+    padding: 4px 0 0 0;
+  }
+
+  .instructions ol li {
+    padding: 4px 0;
+  }
+}
